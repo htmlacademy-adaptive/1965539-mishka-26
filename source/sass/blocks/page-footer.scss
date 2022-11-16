@@ -1,0 +1,9 @@
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+  .page-footer__logo {
+    display: block;
+  }
+}

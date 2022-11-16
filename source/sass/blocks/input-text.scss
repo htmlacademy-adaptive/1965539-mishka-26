@@ -1,0 +1,71 @@
+.input-text {
+  display: flex;
+  align-items: center;
+}
+
+.input-text__label {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.input-text__input {
+  padding: 16px 0 11px 14px;
+  border: 1px solid $black;
+  flex-grow: 1;
+  border-width: 0 0 2px 0;
+}
+
+.input-text__input::placeholder {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.input-text__icon-letter {
+  display: block;
+  position: absolute;
+  width: 18px;
+  height: 13px;
+  right: 16px;
+  top: 16px;
+}
+
+.input-text__icon-phone {
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 14px;
+  top: 14px;
+}
+
+@media (min-width: $tablet) {
+  .input-text__label {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .input-text__input {
+    padding: 22px 0 12px 18px;
+  }
+
+  .input-text__input::placeholder {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .input-text__icon-letter {
+    right: 19px;
+    top: 19px;
+  }
+
+  .input-text__icon-phone {
+    right: 18px;
+    top: 18px;
+  }
+}

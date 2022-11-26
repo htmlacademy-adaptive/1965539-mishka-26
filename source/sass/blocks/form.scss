@@ -1,15 +1,134 @@
+// .form__wrapper {
+//   margin-left: 30px;
+//   margin-right: 30px;
+// }
+
+.form__button {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 56px;
+  width: 260px;
+  padding-top: 18px;
+  padding-bottom: 14px;
+}
+
 .form__radio-group {
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-top: 31px;
+  margin-bottom: 18px;
 }
 
 .form__radio-item {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .form__checkbox-group {
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-top: 25px;
+  margin-bottom: 16px;
+}
+
+.form__checkbox-item {
+  margin-bottom: 12px;
+}
+
+.form__group {
+  margin-left: 30px;
+  margin-right: 30px;
+  // margin-bottom: 5px;
+  border: none;
+  padding: 0;
+  border-top: 1px solid $blue;
+}
+
+
+.form__input-text {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 29px;
+  // margin-left: 30px;
+  // margin-right: 30px;
+  margin-bottom: 33px;
+  // box-sizing: border-box;
+}
+
+// .form__input-text {
+//   margin-left: 30px;
+//   margin-right: 30px;
+// }
+
+.form__title {
+  padding-right: 20px;
+}
+
+.form__textarea {
+  min-height: 142px;
+  border: 2px solid $border-grey;
+  font-weight: 400;
+  width: 100%;
+  padding-top: 17px;
+  padding-left: 17px;
+  padding-right: 17px;
+  box-sizing: border-box;
+}
+
+.form__textarea::placeholder {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.form__tel {
+  margin-bottom: 34px;
+}
+
+.form__email {
+  margin-bottom: 34px;
+}
+
+.form__other {
+  padding-top: 23px;
+}
+
+.form__hint {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 28px;
+}
+
+.form__submit-wrapper {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+@media (min-width: $tablet) {
+  .form__group {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 55px;
+    border: none;
+    display: flex;
+  }
+
+  .form__textarea::placeholder {
+    font-size: 19px;
+  }
+
+  .form__content-wrapper {
+    padding-left: 167px;
+    // padding-right: 175px;
+    width: 100%;
+  }
 }

@@ -1,28 +1,57 @@
 .input-text {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  margin-bottom: 22px;
 }
 
 .input-text__label {
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
+  // padding-top: 29px;
 }
 
 .input-text__input {
-  padding: 16px 0 11px 14px;
-  border: 1px solid $black;
-  flex-grow: 1;
+  // padding: 16px 0 11px 14px;
+  border: 2px solid $black;
+  // flex-grow: 1;
   border-width: 0 0 2px 0;
+  padding-top: 20px;
+  padding-bottom: 12px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+  width: 100%;
+  box-sizing: border-box;
 }
+
+.input-text__input-tel {
+  padding-bottom: 17px;
+  // margin-bottom: 34px;
+}
+
+.input-text__input-email {
+  padding-bottom: 17px;
+}
+
+// input::-webkit-input-placeholder {
+//   color: red;
+//   opacity: 0.3;
+// }
+
+// input:-moz-placeholder {
+//   color: red;
+//   opacity: 0.3;
+// }
 
 .input-text__input::placeholder {
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 18px;
-  color: #444444;
+  color: #000000;
+  opacity: 0.3;
 }
 
 .input-text__icon-letter {
@@ -45,9 +74,9 @@
 
 @media (min-width: $tablet) {
   .input-text__label {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 18px;
   }
 
   .input-text__input {
@@ -55,8 +84,7 @@
   }
 
   .input-text__input::placeholder {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 19px;
   }
 
   .input-text__icon-letter {
@@ -69,3 +97,5 @@
     top: 18px;
   }
 }
+
+// @media (min-width: $desktop) {

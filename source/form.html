@@ -74,10 +74,10 @@
         уточнить детали.</p>
     </section>
     <section class="form form-page__form">
-      <form action="">
+      <form class="form__wrapper" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="form__group">
           <Legend class="form__title special-title">Тип</Legend>
-          <ul class="form__radio-group">
+          <ul class="form__radio-group form__content-wrapper">
             <li class="radio form__radio-item">
               <input type="radio" class="visually-hidden radio__input" id="element" name="type" value="element" checked>
               <label for="element" class="radio__label">Аксессуар для интерьера</label>
@@ -90,7 +90,7 @@
         </fieldset>
         <fieldset class="form__group">
           <Legend class="form__title special-title">Цвет</Legend>
-          <ul class="form__checkbox-group">
+          <ul class="form__checkbox-group form__content-wrapper">
             <li class="checkbox form__checkbox-item">
               <input type="checkbox" class="visually-hidden checkbox__input" id="white" name="color" value="white"
                 checked>
@@ -121,7 +121,7 @@
         </fieldset>
         <fieldset class="form__group">
           <Legend class="form__title special-title">Фио</Legend>
-          <ul class="form__input-text">
+          <ul class="form__input-text form__content-wrapper">
             <li class="input-text">
               <label class="input-text__label" for="username">Имя:</label>
               <input class="input-text__input" type="text" id="username" placeholder="Введите ваше имя*" required>
@@ -136,30 +136,49 @@
             </li>
           </ul>
         </fieldset>
-        <ul class="form__radio-group">
-          <li class="input-text">
-            <label class="input-text__label special-title" for="username">Тел</label>
-            <input class="input-text__input" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
-              pattern="+7 [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" required>
-          </li>
-          <li class="input-text">
-            <label class="input-text__label special-title" for="usersurname">E-mail</label>
-            <input class="input-text__input" type="email" name="email" placeholder="Ваш Email*" required>
-          </li>
-          <p class="special-title">Доп</p>
-          <textarea class="form" name="wishes" cols="30" rows="5"
-            placeholder="Опишите все ваши пожелания к заказу"></textarea>
-        </ul>
-        <p class="form-page__hint main-nav__text">*Поля обязательны для заполнения</p>
-        <input class="form__button button" type="submit" value="Отправить заказ">
+
+        <fieldset class="form__group form__tel">
+          <!--
+            <li class="input-text"> -->
+
+          <!-- <div class="special-title">
+              <h2 class="special-title__wrapper">
+                <span class="special-title__text">Контактные данные (владельца кота)</span>
+              </h2>
+            </div> -->
+          <Legend class="form__title special-title">Тел</Legend>
+          <!-- <label class="input-text__label line" for="username"><span class="input-text__label-text">Тел</span></label> -->
+
+          <p class="form__content-wrapper">
+            <input class="input-text__input input-text__input-tel" type="tel" name="phone"
+              placeholder="+7 ХХХ ХХХ ХХ ХХ*" pattern="+7 [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" required>
+          </p>
+        </fieldset>
+        <fieldset class="form__group form__email">
+          <Legend class="form__title special-title">E-mail</Legend>
+          <p class="form__content-wrapper">
+            <input class="input-text__input input-text__input-email" type="email" name="email" placeholder="Ваш Email*"
+              required>
+          </p>
+        </fieldset>
+        <fieldset class="form__group form__other">
+          <Legend class="form__title special-title">Доп</Legend>
+          <p class="form__content-wrapper">
+            <textarea class="form__textarea" name="wishes" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </p>
+        </fieldset>
+        <div class="form__submit-wrapper">
+          <p class="form__hint">*Поля обязательны для заполнения</p>
+          <button class="form__button button" type="submit">Отправить заказ</button>
+        </div>
       </form>
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__content-wrapper content-wrapper">
+    <div class="page-footer__wrapper content-wrapper">
       <div class="page-footer__logo">
         <a class="page-footer__link footer-logo" href="index.html" aria-label="Мишка">
-          <img src="./img/logo-footer.svg" width="128" height="24" alt="Логотип Мишка">
+          <img class="page-footer__svg" src="./img/logo-footer.svg" width="128" height="24" alt="Логотип Мишка">
         </a>
       </div>
       <div class="social">
@@ -195,7 +214,7 @@
       </div>
       <div class="copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="copyright__text">HTML Academy</span>
+          <span class="copyright__text">Разработано</span>
           <svg class="copyright__svg" width="27" height="34" viewBox="0 0 27 34" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <use href="./img/sprite.svg#htmlacademy" />
@@ -204,7 +223,7 @@
       </div>
     </div>
   </footer>
-  <!-- <script src="./js/script.js"></script> -->
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

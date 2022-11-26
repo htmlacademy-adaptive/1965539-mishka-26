@@ -8,7 +8,7 @@
   padding-left: 60px;
   cursor: pointer;
   padding-top: 5px;
-  width: 155px;
+  // width: 155px;
 
   &::before {
     content: "";
@@ -36,4 +36,10 @@
 
 .radio__input:checked+.radio__label::after {
   display: block;
+}
+
+@media (min-width: $tablet) {
+  .radio__label {
+    font-size: 19px;
+  }
 }

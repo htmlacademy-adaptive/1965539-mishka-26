@@ -69,37 +69,8 @@
   box-shadow: 0 6px 0 0 #231f20, 0 12px 0 0 #231f20;
 }
 
-.main-nav--opened .main-nav__toggle::after {
-  transform: rotate(-45deg);
-}
-
-.main-nav--opened .main-nav__toggle::before {
-  transform: rotate(45deg);
-  box-shadow: none;
-}
-
 .main-nav--opened .main-nav__wrapper {
   display: block;
-}
-
-.main-nav--opened .main-nav__toggle::before,
-.main-nav--opened .main-nav__toggle::after {
-  content: "";
-  position: absolute;
-  top: 38px;
-  right: 27px;
-  width: 27px;
-  height: 2px;
-  background-color: $black;
-}
-
-.main-nav--opened .main-nav__wrapper {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 20;
-  background-color: $white;
 }
 
 .main-nav--closed .main-nav__wrapper {
@@ -119,6 +90,37 @@
   position: relative;
 }
 
+@media (max-width: $mobile) {
+  .main-nav--opened .main-nav__toggle::after {
+    transform: rotate(-45deg);
+  }
+
+  .main-nav--opened .main-nav__toggle::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  .main-nav--opened .main-nav__toggle::before,
+  .main-nav--opened .main-nav__toggle::after {
+    content: "";
+    position: absolute;
+    top: 38px;
+    right: 27px;
+    width: 27px;
+    height: 2px;
+    background-color: $black;
+  }
+
+  .main-nav--opened .main-nav__wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+    background-color: $white;
+  }
+}
+
 @media (min-width: $tablet) {
   .main-nav__logo-wrapper {
     margin-left: 48px;
@@ -129,12 +131,46 @@
     width: 136px;
     height: 65px;
   }
-}
 
-@media (min-width: $tablet) {
-
-  .main-nav__logo-wrapper {
-    margin-top: 21px;
-    text-align: left;
+  .main-nav__toggle {
+    display: none;
   }
+
+  .main-nav {
+    text-transform: none;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .main-nav__wrapper {
+    display: block;
+    position: relative;
+  }
+
+  .main-nav--closed .main-nav__wrapper {
+    display: block;
+    position: relative;
+  }
+
+  .main-nav--opened .main-nav__wrapper {
+    display: block;
+    position: relative;
+  }
+
+  // .main-nav--opened .main-nav__wrapper {
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   left: 0;
+  //   z-index: 20;
+  //   background-color: $white;
+  // }
 }
+
+// @media (min-width: $tablet) {
+//   .main-nav__logo-wrapper {
+//     margin-top: 21px;
+//     text-align: left;
+//   }
+// }

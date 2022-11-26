@@ -1,0 +1,21 @@
+.catalog-page__video {
+  margin-left: 30px;
+  margin-right: 30px;
+  border: 1px solid #ececec;
+  margin-bottom: 64px;
+}
+
+@media (min-width: $tablet) {
+  .catalog-page__video {
+    margin-left: 50px;
+    margin-right: 50px;
+    display: grid;
+    margin-bottom: 64px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .catalog-page__video {
+    margin-bottom: 108px;
+  }
+}

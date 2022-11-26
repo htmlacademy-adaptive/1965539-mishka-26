@@ -2,3 +2,9 @@
   height: 79px;
   position: relative;
 }
+
+@media (min-width: $tablet) {
+  .main-header__logo-wrap {
+    height: 87px;
+  }
+}

@@ -1,9 +1,31 @@
+.page-footer {
+  background-color: $background-grey;
+  padding-top: 30px;
+}
+
 .page-footer__logo {
   display: none;
 }
 
 @media (min-width: $tablet) {
+  .page-footer {
+    padding: 30px 50px;
+  }
+
   .page-footer__logo {
-    display: block;
+    display: flex;
+    align-items: center;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-footer__svg {
+    width: 102px;
+    height: 34px;
   }
 }
+
+// @media (min-width: $tablet) {

@@ -5,3 +5,15 @@
   font-size: 13px;
   line-height: 24px;
 }
+
+@media (min-width: $tablet) {
+  .inner-page-text {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    margin-top: 55px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 81px;
+  }
+}

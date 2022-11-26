@@ -16,6 +16,12 @@
 
 @media (min-width: $desktop) {
   .catalog-page__video {
-    margin-bottom: 108px;
+    margin: 0 auto;
+    width: 367px;
+    margin-bottom: 103px;
+  }
+
+  .catalog-page__catalog {
+    margin-bottom: 55px;
   }
 }

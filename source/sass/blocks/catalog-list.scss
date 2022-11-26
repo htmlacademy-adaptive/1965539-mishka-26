@@ -21,19 +21,24 @@
   .catalog-list__item {
     display: flex;
     margin-top: 68px;
-    margin-bottom: -21px;
   }
 }
 
 @media (min-width: $desktop) {
   .catalog-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 316px 316px 316px;
     gap: 51px;
+    margin: 0 auto;
+    width: 1050px;
+    margin-top: 121px;
   }
 
   .catalog-list__item {
     display: initial;
     min-height: 659px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
   }
 }

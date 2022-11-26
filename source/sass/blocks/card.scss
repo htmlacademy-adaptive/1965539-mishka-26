@@ -3,7 +3,6 @@
   padding-right: 27px;
   padding-bottom: 27px;
   padding-top: 28px;
-  margin-top: -5px;
 }
 
 .card__title {
@@ -53,6 +52,7 @@
 
   .card__price {
     font-size: 17px;
+    margin: 0;
   }
 
   .card__image {
@@ -73,14 +73,13 @@
 
 @media (min-width: $desktop) {
   .card__image {
-    // height: 462px;
-    min-width: auto;
+    height: 100%;
+    width: auto;
   }
 
   .card__text {
-    padding: 29px 27px 26px 28px;
-    display: flex;
-    flex-direction: column;
+    padding: 27px 27px 26px 26px;
+    min-height: 141px;
   }
 
   .card__title {
@@ -89,5 +88,11 @@
 
   .card__description {
     margin-bottom: 0;
+  }
+
+  .card__image-link {
+    height: 462px;
+    display: block;
+    overflow: hidden;
   }
 }

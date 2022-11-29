@@ -5,9 +5,9 @@
   font-size: 17px;
   line-height: 18px;
   position: relative;
-  padding-left: 60px;
+  padding-left: 61px;
   cursor: pointer;
-  padding-top: 8px;
+  padding-top: 9px;
   // width: 155px;
 
   &::before {
@@ -41,5 +41,19 @@
 @media (min-width: $tablet) {
   .checkbox__label {
     font-size: 19px;
+    padding-left: 82px;
+    padding-top: 16px;
+
+    &::before {
+      width: 48px;
+      height: 48px;
+    }
+
+    &::after {
+      width: 14px;
+      height: 28px;
+      top: 7px;
+      left: 19px;
+    }
   }
 }

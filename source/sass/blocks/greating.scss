@@ -1,0 +1,60 @@
+.greeting__title {
+  padding: 0 30px 103px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  margin: 0 auto;
+  width: 260px;
+}
+
+.greeting__list {
+  list-style: none;
+  padding: 0;
+}
+
+.greeting__link {
+  text-decoration: none;
+  display: block;
+}
+
+// .greeting__item {
+//   width: 130px;
+// }
+
+.greeting__item--decor {
+  background: $light-blue;
+}
+
+.greeting__item--toy {
+  background: $light-blue-second;
+}
+
+.greeting__text {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  color: $white;
+  padding: 24px 160px 31px 30px;
+  display: block;
+  max-width: 130px;
+}
+
+.greeting__content-wrapper {
+  padding: 73px 0 0;
+}
+
+
+@media (min-width: $tablet) {
+  .greeting__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .greeting__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

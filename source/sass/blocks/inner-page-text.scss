@@ -14,6 +14,17 @@
     margin-top: 55px;
     padding-left: 50px;
     padding-right: 50px;
-    margin-bottom: 81px;
+    margin-bottom: 14px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .inner-page-text {
+    width: 1048px;
+    display: block;
+    margin: 0 auto;
+    max-width: 702px;
+    padding-top: 111px;
+    padding-bottom: 12px;
   }
 }

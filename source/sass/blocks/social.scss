@@ -11,8 +11,8 @@
 }
 
 .social__item {
-  margin-right: 12px;
-  margin-left: 12px;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
 // .social__svg {
@@ -33,11 +33,18 @@
     padding: 0;
     align-items: center;
   }
-}
 
-@media (min-width: $desktop) {
-  .social__list {
-    padding-left: 28px;
-    padding-bottom: 10px;
+  .social__item {
+    margin-right: 15px;
+    margin-left: 15px;
+    padding-top: 3px;
   }
 }
+
+// @media (min-width: $desktop) {
+//   .social__item {
+//     margin-right: 15px;
+//     margin-left: 15px;
+//     padding-top: 3px;
+//   }
+// }

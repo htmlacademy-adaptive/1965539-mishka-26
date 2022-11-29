@@ -12,8 +12,8 @@
 
   &::before {
     content: "";
-    width: 35px;
-    height: 35px;
+    width: 36px;
+    height: 36px;
     border: 2px solid $border-grey;
     border-radius: 50%;
     position: absolute;
@@ -28,8 +28,8 @@
     height: 17px;
     border-radius: 50%;
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 11px;
+    left: 11px;
     background-color: $blue;
   }
 }
@@ -41,5 +41,19 @@
 @media (min-width: $tablet) {
   .radio__label {
     font-size: 19px;
+    padding-left: 77px;
+    padding-top: 16px;
+
+    &::before {
+      width: 46px;
+      height: 46px;
+    }
+
+    &::after {
+      width: 20px;
+      height: 20px;
+      top: 15px;
+      left: 15px;
+    }
   }
 }

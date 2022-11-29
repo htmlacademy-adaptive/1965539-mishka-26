@@ -8,7 +8,7 @@
   justify-content: center;
   text-decoration: none;
   // color: $darkgrey;
-  padding-top: 15px;
+  padding-top: 18px;
   padding-bottom: 22px;
   align-items: center;
 }
@@ -38,12 +38,22 @@
     display: flex;
   }
 
-  .copyright__text {
-    margin-right: 22px;
-    padding-right: 5px;
-  }
+  // .copyright__text {
+  //   margin-right: 22px;
+  //   padding-right: 5px;
+  // }
 
   .copyright__link {
     padding-top: 21px;
   }
+
+  .copyright__text {
+    padding-right: 28px;
+  }
 }
+
+// @media (min-width: $tablet) {
+//   .copyright__text {
+//     padding-right: 28px;
+//   }
+// }

@@ -17,3 +17,19 @@ $blue: #62d1ba;
 $title-blue: #63d1bb;
 $link-grey: #231f20;
 $light-grey: #ececec;
+$light-blue: #63d1bb;
+$light-blue-second: #56c3b2;
+
+.content-wrapper {
+  box-sizing: border-box;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1150px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @media (min-width: $tablet) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}

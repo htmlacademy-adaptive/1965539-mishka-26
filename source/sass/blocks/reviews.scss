@@ -107,3 +107,49 @@
     right: 120px;
   }
 }
+
+@media (min-width: $desktop) {
+  .reviews {
+    margin: 0 auto;
+    width: 1050px;
+    padding-left: 175px;
+    margin-bottom: 287px;
+
+    &::after {
+      bottom: -137px;
+      width: 100%;
+      height: 23px;
+      left: 0;
+      background-size: auto;
+      background-image: url("../../img/zigzag-line-desktop.svg");
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      background: url("../../img/review-desktop.png") no-repeat left 0;
+      z-index: -10;
+      position: absolute;
+      top: 42px;
+      left: 0;
+      height: 457px;
+      background-size: cover;
+      width: 350px;
+    }
+  }
+
+  .reviews__title {
+    margin-top: 73px;
+  }
+
+  .reviews__button {
+    top: 121px;
+    right: 0px;
+  }
+
+  .reviews__text {
+    margin-top: 36px;
+    margin-bottom: 44px;
+  }
+}

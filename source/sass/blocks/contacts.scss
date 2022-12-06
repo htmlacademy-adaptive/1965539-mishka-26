@@ -84,3 +84,40 @@
     margin-bottom: 18px;
   }
 }
+
+@media (min-width: $desktop) {
+  .contacts {
+    width: 1050px;
+    padding-left: 175px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .contacts__list {
+    grid-template-columns: none;
+  }
+
+  .contacts__title {
+    margin-bottom: 35px;
+  }
+
+  .contacts__map {
+    position: absolute;
+    top: -79px;
+    right: -1px;
+  }
+
+  .contacts__button {
+    margin: unset;
+    margin-right: auto;
+  }
+
+  .contacts__content-wrapper {
+    margin-bottom: 54px;
+    padding: 0;
+  }
+
+  .contacts__button-wrapper {
+    padding: 0;
+  }
+}

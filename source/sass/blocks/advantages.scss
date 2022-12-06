@@ -45,3 +45,20 @@
   //   order: 2;
   // }
 }
+
+@media (min-width: $desktop) {
+  .advantages {
+    margin: 0 auto;
+    width: 1050px;
+    padding-left: 175px;
+  }
+
+  .advantages__title {
+    padding-top: 67px;
+  }
+
+  .advantages__list {
+    column-gap: 25px;
+    grid-template-columns: 325px 325px;
+  }
+}

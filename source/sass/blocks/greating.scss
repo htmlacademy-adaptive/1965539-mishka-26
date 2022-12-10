@@ -19,7 +19,26 @@
 
 .greeting__link {
   text-decoration: none;
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.greeting__icon {
+  padding-right: 36px;
+  position: absolute;
+  bottom: 50%;
+  right: 0;
+  transform: translateY(50%);
+}
+
+.greeting__icon--interior {
+  bottom: 46%;
+  transform: translateY(48%);
+}
+
+.greeting__icon--toy {
+  padding-right: 27px;
 }
 
 // .greeting__item {
@@ -39,13 +58,13 @@
   font-size: 19px;
   line-height: 24px;
   color: $white;
-  padding: 24px 160px 31px 30px;
+  padding: 25px 0 30px 30px;
   display: block;
   max-width: 130px;
 }
 
 .greeting__content-wrapper {
-  padding: 72px 0 0;
+  padding: 73px 0 0;
   min-height: 489px;
 }
 
@@ -65,7 +84,6 @@
     background-image: url("../img/hero-mobile@2x.jpg");
   }
 }
-
 
 @media (min-width: $tablet) {
   .greeting {

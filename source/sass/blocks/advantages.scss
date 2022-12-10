@@ -17,6 +17,73 @@
   line-height: 20px;
   margin-bottom: 27px;
   padding-top: 56px;
+  position: relative;
+}
+
+.advantages__list-item--ecology::before {
+  content: "";
+  display: block;
+  width: 33px;
+  height: 38px;
+  position: absolute;
+  top: -7px;
+  left: 2px;
+  background: url("../img/icon-ecology.svg") no-repeat 0 0;
+}
+
+.advantages__list-item--style::before {
+  content: "";
+  display: block;
+  width: 47px;
+  height: 27px;
+  position: absolute;
+  top: -7px;
+  left: 2px;
+  background: url("../../img/icon-style.svg") no-repeat 0 0;
+}
+
+.advantages__list-item--likes::before {
+  content: "";
+  display: block;
+  width: 34px;
+  height: 27px;
+  position: absolute;
+  top: -7px;
+  left: 2px;
+  background: url("../../img/icon-likes.svg") no-repeat 0 0;
+}
+
+.advantages__list-item--handmade::before {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 34px;
+  position: absolute;
+  top: -7px;
+  left: 2px;
+  background: url("../img/icon-handmade.svg") no-repeat 0 0;
+}
+
+.advantages__list-item--support::before {
+  content: "";
+  background: url("../img/icon-support.svg") no-repeat 0 0;
+  display: block;
+  width: 55px;
+  height: 23px;
+  position: absolute;
+  top: -7px;
+  left: 2px;
+}
+
+.advantages__list-item--gift::before {
+  content: "";
+  display: block;
+  width: 33px;
+  height: 38px;
+  position: absolute;
+  top: -7px;
+  left: 2px;
+  background: url("../../img/icon-gift.svg") no-repeat 0 0;
 }
 
 @media (min-width: $tablet) {

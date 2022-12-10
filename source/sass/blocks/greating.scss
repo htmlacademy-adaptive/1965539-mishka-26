@@ -68,29 +68,8 @@
 
 
 @media (min-width: $tablet) {
-  .greeting__title {
-    font-size: 43px;
-    line-height: 50px;
-    padding: 0px 50px;
-    padding-bottom: 355px;
-    margin: 0;
-    width: auto;
-  }
-
-  .greeting__content-wrapper::before {
-    background: url("../img/hero-tablet.jpg") no-repeat center 0;
-    background-size: auto 111%;
-    top: -84px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/hero-tablet@2x.jpg");
-    }
-  }
-
-  .greeting__list {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
+  .greeting {
+    background: red;
 
     &::after {
       content: "";
@@ -101,7 +80,57 @@
       width: 100%;
       height: 24px;
       left: 0;
+      z-index: 20;
     }
+  }
+
+  .greeting__title {
+    font-size: 43px;
+    line-height: 50px;
+    padding: 0px 50px;
+    padding-bottom: 355px;
+    margin: 0;
+    width: auto;
+    position: relative;
+    z-index: 20;
+  }
+
+  .greeting__content-wrapper {
+    padding-top: 84px;
+  }
+
+  .greeting__content-wrapper::before {
+    background: url("../img/hero-tablet.jpg") no-repeat center 0;
+    background-size: auto 111%;
+    top: -84px;
+    z-index: 10;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
+    }
+  }
+
+  .greeting__list {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 10px;
+    z-index: 10;
+
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   background-image: url(../img/zigzag-tablet.svg);
+    //   background-repeat: repeat-x;
+    //   bottom: 0;
+    //   width: 100%;
+    //   height: 24px;
+    //   left: 0;
+    // }
+  }
+
+  .greeting__item {
+    z-index: 20;
   }
 
   .greeting__text {
@@ -133,6 +162,7 @@
 
   .greeting__content-wrapper {
     padding: 70px 0 0;
+    position: relative;
   }
 
   .greeting__text {
@@ -143,6 +173,10 @@
 
   .greeting__list {
     margin-top: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 
     &::after {
       background-image: url("../img/zigzag-fill-desktop-for-blue.svg");
@@ -154,9 +188,9 @@
     }
   }
 
-  .greeting__item {
+  .greeting__link {
     &:hover {
-      padding-top: 30px;
+      padding-bottom: 30px;
     }
   }
 

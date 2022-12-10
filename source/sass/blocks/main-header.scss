@@ -1,10 +1,22 @@
-.main-header__logo-wrap {
-  height: 79px;
+.main-header {
   position: relative;
 }
 
+.main-header__logo-wrap {
+  height: 79px;
+}
+
 @media (min-width: $tablet) {
+  .main-header {
+    display: flex;
+    // margin: 0 auto;
+    // min-width: 320px;
+    // max-width: 1150px;
+  }
+
   .main-header__logo-wrap {
     height: 87px;
+    border-bottom: 1px solid $light-grey;
+    width: 0;
   }
 }

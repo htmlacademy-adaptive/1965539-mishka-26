@@ -16,7 +16,6 @@
 }
 
 .main-nav {
-  text-transform: uppercase;
   color: $black;
   position: relative;
 }
@@ -86,10 +85,6 @@
   position: absolute;
 }
 
-.main-nav--nojs .main-nav__wrapper {
-  position: relative;
-}
-
 @media (max-width: $mobile) {
   .main-nav--opened .main-nav__toggle::after {
     transform: rotate(-45deg);
@@ -119,6 +114,11 @@
     z-index: 20;
     background-color: $white;
   }
+
+  .main-nav--nojs .main-nav__wrapper {
+    position: static;
+    min-height: 0;
+  }
 }
 
 @media (min-width: $tablet) {
@@ -127,35 +127,66 @@
     text-align: left;
   }
 
-  .header-logo__image {
-    width: 136px;
-    height: 65px;
-  }
-
   .main-nav__toggle {
     display: none;
   }
 
   .main-nav {
-    text-transform: none;
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 24px;
-  }
-
-  .main-nav__wrapper {
-    display: block;
+    // text-transform: none;
+    // font-weight: 700;
+    // font-size: 15px;
+    // line-height: 24px;
+    // margin-left: 50px;
+    // margin-right: 50px;
     position: relative;
+    width: 100%;
+    z-index: 20;
   }
 
   .main-nav--closed .main-nav__wrapper {
-    display: block;
-    position: relative;
+    display: flex;
+    position: unset;
+  }
+
+  .main-nav__wrapper {
+    flex-direction: column;
   }
 
   .main-nav--opened .main-nav__wrapper {
+    display: flex;
+    position: unset;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: flex-start;
+    order: 1;
+    width: 52%;
+
+  }
+
+  .main-nav__user-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 48%;
+    align-self: end;
+  }
+
+  .main-nav__text {
     display: block;
-    position: relative;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: end;
+    position: absolute;
+    bottom: 0;
+    order: 1;
+    width: 35%;
+    align-self: end;
+    padding-right: 50px;
+    margin-bottom: 27px;
   }
 
   // .main-nav--opened .main-nav__wrapper {
@@ -168,9 +199,29 @@
   // }
 }
 
-// @media (min-width: $tablet) {
-//   .main-nav__logo-wrapper {
-//     margin-top: 21px;
-//     text-align: left;
-//   }
-// }
+@media (min-width: $desktop) {
+  .main-nav__stock-list {
+    list-style: none;
+    color: $black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .main-nav__list {
+    order: 0;
+  }
+
+  .main-nav__user-list {
+    position: absolute;
+  }
+
+  .main-nav__wrapper {
+    z-index: 100;
+    width: 1150px;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    position: unset;
+  }
+}

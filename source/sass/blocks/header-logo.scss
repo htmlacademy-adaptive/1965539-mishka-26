@@ -9,10 +9,15 @@
   .header-logo__image {
     width: 114px;
     height: 46px;
-    left: 50px;
+    left: 48px;
     transform: none;
     top: 21px;
   }
+
+  // .header-logo__image {
+  //   width: 136px;
+  //   height: 65px;
+  // }
 }
 
 @media (min-width: $desktop) {

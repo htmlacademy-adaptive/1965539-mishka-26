@@ -4,6 +4,8 @@
 
 .main-header__logo-wrap {
   height: 79px;
+  display: block;
+  background-color: $white;
 }
 
 @media (min-width: $tablet) {
@@ -12,11 +14,13 @@
     // margin: 0 auto;
     // min-width: 320px;
     // max-width: 1150px;
+    background-color: #fafafa;
   }
 
   .main-header__logo-wrap {
     height: 87px;
     border-bottom: 1px solid $light-grey;
     width: 0;
+    z-index: 30;
   }
 }

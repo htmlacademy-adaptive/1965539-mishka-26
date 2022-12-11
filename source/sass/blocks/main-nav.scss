@@ -22,6 +22,7 @@
 
 .main-nav__wrapper {
   position: absolute;
+  background-color: $white;
 }
 
 .main-nav--nojs .main-nav__toggle {
@@ -119,6 +120,10 @@
     position: static;
     min-height: 0;
   }
+
+  .main-nav--nojs .main-nav__wrapper {
+    display: block;
+  }
 }
 
 @media (min-width: $tablet) {
@@ -150,6 +155,7 @@
 
   .main-nav__wrapper {
     flex-direction: column;
+    background-color: unset;
   }
 
   .main-nav--opened .main-nav__wrapper {
@@ -186,7 +192,7 @@
     width: 35%;
     align-self: end;
     padding-right: 50px;
-    margin-bottom: 27px;
+    margin-bottom: 44px;
   }
 
   // .main-nav--opened .main-nav__wrapper {

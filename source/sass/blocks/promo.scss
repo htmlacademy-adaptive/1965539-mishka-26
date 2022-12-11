@@ -100,6 +100,10 @@
   padding-bottom: 14px;
 }
 
+.promo__content-wrapper {
+  margin-bottom: 73px;
+}
+
 @media (min-width: $tablet) {
   .promo {
     margin: 0;
@@ -117,8 +121,8 @@
 
   .promo__wrapper {
     position: relative;
-    margin-left: 50px;
-    margin-right: 50px;
+    // margin-left: 50px;
+    // margin-right: 50px;
   }
 
   .promo__mark {
@@ -152,6 +156,7 @@
 
   .promo__content-wrapper {
     width: 45%;
+    margin-bottom: 0;
   }
 
   .promo__image-wrapper {
@@ -160,7 +165,7 @@
     height: 404px;
     overflow: hidden;
     right: 0;
-    top: 130px;
+    top: 115px;
   }
 
   .promo__image {

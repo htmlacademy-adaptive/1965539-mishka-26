@@ -50,7 +50,7 @@
   }
 
   .user-nav__item {
-    border-left: 1px solid #ececec;
+    border-left: 1px solid $border-light-grey;
 
     &:last-child {
       border-bottom: none;
@@ -72,7 +72,7 @@
   }
 
   .user-nav {
-    border-bottom: 1px solid $light-grey;
+    border-bottom: 1px solid $border-light-grey;
     width: 100%;
     min-height: 87px;
   }
@@ -90,7 +90,8 @@
 @media (min-width: $desktop) {
   .user-nav {
     border-bottom: none;
-    width: 100%;
+    width: 400px;
     min-height: 87px;
+    z-index: 22;
   }
 }

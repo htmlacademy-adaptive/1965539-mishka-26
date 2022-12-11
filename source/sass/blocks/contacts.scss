@@ -9,6 +9,7 @@
   font-size: 14px;
   line-height: 30px;
   color: $border-grey;
+  margin-bottom: 63px;
 }
 
 .contacts__item {
@@ -35,7 +36,7 @@
 
 .contacts__map {
   height: 454.16px;
-  margin-bottom: 42px;
+  margin-bottom: 41px;
 }
 
 .contacts__button {
@@ -48,6 +49,7 @@
 @media (min-width: $tablet) {
   .contacts {
     margin-bottom: 57px;
+    margin-top: 150px;
   }
 
   .contacts__list {
@@ -55,6 +57,7 @@
     line-height: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 18px;
   }
 
   .contacts__list-term {

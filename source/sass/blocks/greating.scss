@@ -1,5 +1,6 @@
 .greeting {
   position: relative;
+  background-color: #fafafa;
 }
 
 .greeting__title {
@@ -65,7 +66,6 @@
 
 .greeting__content-wrapper {
   padding: 73px 0 0;
-  min-height: 489px;
 }
 
 .greeting__content-wrapper::before {
@@ -87,16 +87,17 @@
 
 @media (min-width: $tablet) {
   .greeting {
-    background: red;
+    background-color: #fafafa;
+    margin-bottom: 25px;
 
     &::after {
       content: "";
       position: absolute;
-      background-image: url(../img/zigzag-tablet.svg);
+      background-image: url("../img/zigzag-tablet.svg");
       background-repeat: repeat-x;
       bottom: 0;
       width: 100%;
-      height: 24px;
+      height: 23px;
       left: 0;
       z-index: 20;
     }
@@ -105,17 +106,19 @@
   .greeting__title {
     font-size: 43px;
     line-height: 50px;
-    padding: 0px 50px;
-    padding-bottom: 355px;
+    padding: 0px 50px 0;
     margin: 0;
     width: auto;
     position: relative;
     z-index: 20;
+    padding-bottom: 355px;
   }
 
   .greeting__content-wrapper {
-    padding-top: 84px;
+    min-height: 489px;
+    padding-top: 68px;
   }
+
 
   .greeting__content-wrapper::before {
     background: url("../img/hero-tablet.jpg") no-repeat center 0;
@@ -165,12 +168,13 @@
     width: 700px;
     display: block;
     margin: 0 auto;
+    padding-bottom: 0;
   }
 
   .greeting__content-wrapper::before {
     background: url("../../img/hero-desktop.jpg") no-repeat center 0;
     background-size: auto 109%;
-    top: -88px;
+    top: -84px;
 
 
     @media (min-resolution: 2dppx) {
@@ -179,7 +183,7 @@
   }
 
   .greeting__content-wrapper {
-    padding: 70px 0 0;
+    padding: 70px 0 127px;
     position: relative;
   }
 

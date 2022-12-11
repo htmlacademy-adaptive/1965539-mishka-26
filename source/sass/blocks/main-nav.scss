@@ -124,6 +124,10 @@
   .main-nav--nojs .main-nav__wrapper {
     display: block;
   }
+
+  .main-nav--closed {
+    border-bottom: 1px solid $light-grey;
+  }
 }
 
 @media (min-width: $tablet) {

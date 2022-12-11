@@ -1,15 +1,34 @@
-.map {
-  position: relative;
+// .map {
+//   position: relative;
+//   width: 100%;
+// }
+
+.map::before {
+  content: "";
+  display: block;
+  width: 67px;
+  height: 100px;
+  position: absolute;
+  background: url("../img/map-pin.svg") no-repeat 0 0;
+  left: 50%;
+  top: 50%;
 }
 
 .map__image {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  overflow: hidden;
 }
 
 .map__interactive {
   position: absolute;
   top: 0;
   width: 100%;
+}
+
+.map__iframe {
+  width: 100%;
+  position: absolute;
+  top: 0;
 }

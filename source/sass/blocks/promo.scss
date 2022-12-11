@@ -187,11 +187,12 @@
 @media (min-width: $desktop) {
   .promo__title {
     z-index: 10;
+    width: 550px;
   }
 
   .promo {
     margin: 0 auto;
-    width: 1050px;
+    // width: 1050px;
     padding-bottom: 97px;
 
     &::after {
@@ -216,5 +217,19 @@
 
   .promo__description {
     margin-bottom: 50px;
+  }
+
+  .promo__mark {
+    position: absolute;
+    left: -139px;
+    top: 23px;
+  }
+
+  .promo__header {
+    position: relative;
+  }
+
+  .promo__parameter-list {
+    width: 291px;
   }
 }

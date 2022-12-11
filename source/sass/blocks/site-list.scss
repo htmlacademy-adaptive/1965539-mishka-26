@@ -51,15 +51,18 @@
   }
 
   .site-list__item {
-    width: 243px;
+    width: 220px;
+
+    &:first-child {
+      border-right: 1px solid $border-grey2;
+    }
   }
 
   .site-list__link {
     font-size: 17px;
     padding-top: 33px;
     padding-left: 39px;
-    margin-right: 32px;
-    //     &::before {
+    margin-right: 24px //     &::before {
     //       content: none;
     //       position: absolute;
     //       top: 0;

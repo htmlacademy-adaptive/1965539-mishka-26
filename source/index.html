@@ -7,12 +7,16 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__logo-wrap">
-      <a class="main-header__logo">
+      <a class="main-header__logo header-logo">
         <picture>
           <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
@@ -37,7 +41,7 @@
         <ul class="main-nav__user-list user-nav">
           <li class="user-nav__item">
             <a class="user-nav__link user-nav__link--search" href="#">
-              <svg class="user-nav__link-image" width="18" height="18">
+              <svg class="user-nav__link-image" width="18" height="18" fill="none">
                 <use href="./img/sprite.svg#search" />
               </svg>
               <span class="user-nav__link-text">Поиск по сайту</span>
@@ -97,7 +101,7 @@
     <section class="promo content-wrapper">
       <div class="promo__wrapper">
         <header class="promo__header">
-          <h2 class="promo__title section-title">Вязаные корзинки</h2>
+          <h3 class="promo__title section-title">Вязаные корзинки</h3>
           <p class="promo__mark">Товар недели</p>
         </header>
 
@@ -161,7 +165,7 @@
     </section>
 
     <section class="advantages content-wrapper">
-      <h2 class="advantages__title section-title">Коротко о нас:</h2>
+      <h3 class="advantages__title section-title">Коротко о нас:</h3>
 
       <ul class="advantages__list advantages-list">
         <li class="advantages__list-item advantages__list-item--ecology">Экологически чистые&nbsp;материалы</li>
@@ -176,7 +180,7 @@
     </section>
 
     <section class="reviews content-wrapper">
-      <h2 class="reviews__title section-title">Отзывы</h2>
+      <h3 class="reviews__title section-title">Отзывы</h3>
 
       <blockquote class="reviews__content">
         <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
@@ -200,7 +204,7 @@
 
     <section class="contacts">
       <div class="contacts__content-wrapper content-wrapper">
-        <h2 class="contacts__title section-title">Контакты</h2>
+        <h3 class="contacts__title section-title">Контакты</h3>
         <ul class="contacts__list">
           <li class="contacts__item"><span class="contacts__list-term">e-mail:</span>
             <span class="contacts__list-description">
@@ -299,7 +303,7 @@
   <div class="modal page__overlay">
     <div class="modal__wrapper">
       <form class="form-cart modal__form-cart" action="https://echo.htmlacademy.ru" method="POST">
-        <h2 class="form-cart__title">Добавить в корзину</h2>
+        <h3 class="form-cart__title">Добавить в корзину</h3>
 
         <fieldset class="form-cart__fieldset">
           <legend class="form-cart__legend">Выберите размер:</legend>

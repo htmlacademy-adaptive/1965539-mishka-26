@@ -12,6 +12,14 @@
   line-height: 24px;
   color: $black;
   display: block;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .card__description {
@@ -38,7 +46,23 @@
   display: block;
 }
 
+.card__svg:hover {
+  fill: $light-blue;
+}
 
+.card__svg:active {
+  fill: $light-blue;
+  opacity: 0.3;
+}
+
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__cart {
+  align-self: end;
+}
 
 @media (min-width: $tablet) {
   .card__title {

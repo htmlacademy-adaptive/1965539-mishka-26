@@ -28,6 +28,14 @@
 .contacts__mail-link {
   text-decoration: none;
   color: $border-grey;
+
+  &:hover {
+    color: $blue-mail;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .contacts__content-wrapper {
@@ -94,6 +102,10 @@
     display: inline;
     border-bottom: 1px solid $blue;
     padding-bottom: 3px;
+
+    &:active {
+      border-bottom: 1px solid $blue-opasity;
+    }
   }
 
   // .contacts__mail-link::after {

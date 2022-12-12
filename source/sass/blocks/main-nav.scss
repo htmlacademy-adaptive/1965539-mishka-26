@@ -162,6 +162,10 @@
     background-color: unset;
   }
 
+  .main-nav__wrapper--inner {
+    background-color: $background-grey;
+  }
+
   .main-nav--opened .main-nav__wrapper {
     display: flex;
     position: unset;
@@ -233,5 +237,9 @@
     text-align: center;
     align-items: center;
     position: unset;
+  }
+
+  .main-nav--inner {
+    background-color: $background-grey;
   }
 }

@@ -29,6 +29,10 @@
   position: relative;
 }
 
+.greeting__link:hover .greeting__item {
+  background-color: $blue2;
+}
+
 .greeting__icon {
   padding-right: 36px;
   position: absolute;

@@ -14,4 +14,15 @@
   padding: 16px 10px;
   text-decoration: none;
   text-align: center;
+
+  &:hover {
+    background-color: $border-grey;
+    color: $white;
+  }
+
+  &:active {
+    color: $grey-active;
+    background-color: $border-grey;
+    opacity: 0.3;
+  }
 }

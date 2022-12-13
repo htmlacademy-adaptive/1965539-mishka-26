@@ -28,6 +28,9 @@
 .contacts__mail-link {
   text-decoration: none;
   color: $border-grey;
+  display: inline;
+  border-bottom: 1px solid #62d1ba;
+  padding-bottom: 2px;
 
   &:hover {
     color: $blue-mail;
@@ -35,11 +38,27 @@
 
   &:active {
     opacity: 0.3;
+    border-bottom: 1px solid $blue-opasity;
   }
 }
 
 .contacts__content-wrapper {
   margin-bottom: 62px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1150px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.contacts__button-wrapper {
+  box-sizing: border-box;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1150px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .contacts__map {
@@ -95,40 +114,28 @@
 
   .contacts__content-wrapper {
     margin-bottom: 18px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .contacts__mail-link {
     position: relative;
-    display: inline;
-    border-bottom: 1px solid $blue;
     padding-bottom: 3px;
-
-    &:active {
-      border-bottom: 1px solid $blue-opasity;
-    }
   }
-
-  // .contacts__mail-link::after {
-  //   content: "";
-  //   position: absolute;
-  //   height: 1px;
-  //   width: 100%;
-  //   background-color: black;
-  //   left: 0;
-  //   bottom: -4px;
-  // }
 }
 
 @media (min-width: $desktop) {
   .contacts {
     width: 1050px;
-    padding-left: 175px;
+    padding-left: 224px;
     margin: 0 auto;
     position: relative;
+    margin-top: 287px;
   }
 
   .contacts__list {
     grid-template-columns: none;
+    margin-bottom: 54px;
   }
 
   .contacts__title {
@@ -138,7 +145,7 @@
   .contacts__map {
     position: absolute;
     top: -79px;
-    right: -1px;
+    right: 173px;
   }
 
   .contacts__button {
@@ -153,5 +160,9 @@
 
   .contacts__button-wrapper {
     padding: 0;
+  }
+
+  .contacts__mail-link {
+    padding-bottom: 8px
   }
 }

@@ -197,7 +197,7 @@
       background: url("../../img/review-desktop.png") no-repeat left 0;
       z-index: -10;
       position: absolute;
-      top: 42px;
+      top: 0;
       left: 0;
       height: 457px;
       background-size: cover;
@@ -206,16 +206,30 @@
   }
 
   .reviews__title {
-    margin-top: 73px;
+    margin-top: 33px;
+    padding-left: 124px;
   }
 
   .reviews__button {
-    top: 121px;
+    top: 81px;
     right: 0px;
   }
 
   .reviews__text {
     margin-top: 36px;
     margin-bottom: 44px;
+  }
+
+  .reviews__content {
+    padding-left: 125px;
+  }
+
+  .reviews__author-name {
+    font-size: 17px;
+  }
+
+  .reviews__navigation {
+    bottom: 26px;
+    right: 19px;
   }
 }

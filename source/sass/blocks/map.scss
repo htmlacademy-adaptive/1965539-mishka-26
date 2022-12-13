@@ -12,6 +12,7 @@
   background: url("../img/map-pin.svg") no-repeat 0 0;
   left: 50%;
   top: 50%;
+  transform: translate(calc(-50% + 11px), calc(-50% - 33px));
 }
 
 .map__image {
@@ -31,4 +32,12 @@
   width: 100%;
   position: absolute;
   top: 0;
+}
+
+@media (min-width: $desktop) {
+  .map {
+    min-height: 457px;
+    height: 100%;
+    width: 527px;
+  }
 }

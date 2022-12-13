@@ -28,6 +28,23 @@
   font-size: 18px;
 }
 
+.video__play-button {
+  display: block;
+  cursor: pointer;
+  width: 101px;
+  height: 77px;
+  background: url("../img/play.svg") no-repeat 50% 50%;
+  z-index: 10;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border: none;
+}
+
+.video__content-wrapper {
+  position: relative;
+}
+
 @media (min-width: $tablet) {
   .video__image {
     order: -1;

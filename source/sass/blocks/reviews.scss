@@ -26,6 +26,11 @@
 .reviews__content {
   margin: 0;
   margin-bottom: 32px;
+  display: none;
+}
+
+.reviews__content--active {
+  display: block;
 }
 
 .reviews__title {

@@ -1,0 +1,271 @@
+// .form__wrapper {
+//   margin-left: 30px;
+//   margin-right: 30px;
+// }
+
+.form__content-wrapper {
+  margin: 0;
+}
+
+.form__button {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 56px;
+  width: 260px;
+  padding-top: 18px;
+  padding-bottom: 14px;
+}
+
+.form__radio-group {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+.form__radio-item {
+  margin-bottom: 6px;
+
+  // &:last-child {
+  //   margin-bottom: -8px;
+  // }
+}
+
+.form__checkbox-group {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.form__checkbox-item {
+  margin-bottom: 10px;
+}
+
+.form__group {
+  margin-left: 30px;
+  margin-right: 30px;
+  // margin-bottom: 5px;
+  border: none;
+  padding: 0;
+  border-top: 1px solid $blue;
+}
+
+
+.form__input-text {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 28px;
+  // margin-left: 30px;
+  // margin-right: 30px;
+  margin-bottom: 33px;
+  // box-sizing: border-box;
+}
+
+// .form__input-text {
+//   margin-left: 30px;
+//   margin-right: 30px;
+// }
+
+.form__title {
+  padding-right: 20px;
+}
+
+.form__textarea {
+  min-height: 142px;
+  border: 2px solid $border-grey;
+  font-weight: 400;
+  width: 100%;
+  padding-top: 17px;
+  padding-left: 17px;
+  padding-right: 17px;
+  box-sizing: border-box;
+}
+
+.form__textarea::placeholder {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.form__tel {
+  margin-bottom: 34px;
+}
+
+.form__email {
+  margin-bottom: 34px;
+}
+
+.form__other {
+  padding-top: 23px;
+}
+
+.form__hint {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 28px;
+}
+
+.form__submit-wrapper {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.form__input-wrapper {
+  margin: 0;
+}
+
+@media (min-width: $tablet) {
+  .form__group {
+    position: relative;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 0;
+    border: none;
+    display: flex;
+  }
+
+  .form__tel {
+    margin-bottom: 24px;
+  }
+
+  .form__textarea::placeholder {
+    font-size: 19px;
+  }
+
+  .form__content-wrapper {
+    padding-left: 170px;
+    // padding-right: 175px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .form__content-wrapper--input-text {
+    padding-left: 167px;
+  }
+
+  .form__title {
+    position: absolute;
+    display: block;
+    top: 17px;
+    width: 100px;
+    z-index: 10;
+    left: -2px;
+  }
+
+  .form__other {
+    padding-top: 0;
+    margin-bottom: 48px;
+  }
+
+  .form__radio-item {
+    margin-bottom: 18px;
+
+    &:last-child {
+      margin-bottom: -8px;
+    }
+  }
+
+  .form__checkbox-group {
+    padding-left: 167px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 22px;
+    margin-bottom: -24px;
+  }
+
+  .form__checkbox-item {
+    margin-bottom: 18px;
+  }
+
+  .form__block-wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .form__block-wrapper--gray {
+    background-color: $background-grey;
+  }
+
+  .form__input-wrapper--input-text {
+    display: flex;
+    align-items: center;
+  }
+
+  .form__button {
+    margin: 0;
+    order: -1;
+    width: 230px;
+  }
+
+  .form__submit-wrapper {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-content: space-between;
+  }
+
+  .form__hint {
+    font-size: 17px;
+    line-height: 30px;
+    margin: 0;
+    align-self: center;
+  }
+}
+
+@media (min-width: $desktop) {
+  .form__checkbox-group {
+    grid-template-columns: 240px 240px 240px;
+    margin-bottom: -20px;
+  }
+
+  .form__group {
+    width: 1048px;
+    margin: 0 auto;
+  }
+
+  .form__submit-wrapper {
+    width: 1048px;
+    margin: 0 auto;
+    max-width: 699px;
+  }
+
+  .form__content-wrapper {
+    padding-left: 175px;
+  }
+
+  // .form__group {
+  //   margin-top: 12px;
+  // }
+
+  .form__title {
+    top: 19px;
+    left: 58px;
+  }
+
+  .form__checkbox-item {
+    margin-bottom: 16px;
+  }
+
+  .form__tel {
+    margin-bottom: 24px;
+  }
+
+  .form__other {
+    margin-bottom: 44px;
+  }
+
+  .form__textarea {
+    width: 700px;
+  }
+}

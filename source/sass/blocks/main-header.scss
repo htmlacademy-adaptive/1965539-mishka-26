@@ -1,0 +1,38 @@
+.main-header {
+  position: relative;
+  z-index: 20;
+}
+
+.main-header__logo {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-header__logo-wrap {
+  height: 79px;
+  display: block;
+  background-color: $white;
+}
+
+@media (min-width: $tablet) {
+  .main-header {
+    display: flex;
+    // margin: 0 auto;
+    // min-width: 320px;
+    // max-width: 1150px;
+    background-color: #fafafa;
+    overflow: hidden;
+  }
+
+  .main-header__logo-wrap {
+    height: 87px;
+    border-bottom: 1px solid $light-grey;
+    width: 0;
+    z-index: 30;
+  }
+}

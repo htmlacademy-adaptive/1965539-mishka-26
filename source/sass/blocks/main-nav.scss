@@ -1,0 +1,245 @@
+.main-nav__toggle {
+  width: 79px;
+  height: 79px;
+  cursor: pointer;
+  background-color: #fff;
+  border: 0;
+  z-index: 10;
+  top: -79px;
+  right: 0;
+  position: absolute;
+  padding: 0;
+}
+
+.main-nav__text {
+  display: none;
+}
+
+.main-nav {
+  color: $black;
+  position: relative;
+}
+
+.main-nav__wrapper {
+  position: absolute;
+  background-color: $white;
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+
+.main-nav--opened .main-nav__wrapper {
+  display: block;
+}
+
+
+.main-nav--nojs .main-nav__wrapper {
+  position: relative;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  right: 20px;
+  width: 24px;
+  height: 2px;
+  background-color: $black;
+  box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
+}
+
+.main-nav--closed .main-nav__wrapper {
+  display: none;
+}
+
+.main-nav--opened .main-nav__wrapper {
+  display: block;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 32px;
+  right: 31px;
+  width: 20px;
+  height: 2px;
+  background-color: #231F20;
+  box-shadow: 0 6px 0 0 #231f20, 0 12px 0 0 #231f20;
+}
+
+.main-nav--opened .main-nav__wrapper {
+  display: block;
+}
+
+.main-nav--closed .main-nav__wrapper {
+  display: none;
+}
+
+.main-nav {
+  color: #000000;
+  position: relative;
+}
+
+.main-nav__wrapper {
+  position: absolute;
+}
+
+@media (max-width: $mobile) {
+  .main-nav--opened .main-nav__toggle::after {
+    transform: rotate(-45deg);
+  }
+
+  .main-nav--opened .main-nav__toggle::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  .main-nav--opened .main-nav__toggle::before,
+  .main-nav--opened .main-nav__toggle::after {
+    content: "";
+    position: absolute;
+    top: 38px;
+    right: 27px;
+    width: 27px;
+    height: 2px;
+    background-color: $black;
+  }
+
+  .main-nav--opened .main-nav__wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+    background-color: $white;
+  }
+
+  .main-nav--nojs .main-nav__wrapper {
+    position: static;
+    min-height: 0;
+  }
+
+  .main-nav--nojs .main-nav__wrapper {
+    display: block;
+  }
+
+  .main-nav--closed {
+    border-bottom: 1px solid $light-grey;
+  }
+}
+
+@media (min-width: $tablet) {
+  .main-nav__logo-wrapper {
+    margin-left: 48px;
+    text-align: left;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav {
+    // text-transform: none;
+    // font-weight: 700;
+    // font-size: 15px;
+    // line-height: 24px;
+    // margin-left: 50px;
+    // margin-right: 50px;
+    position: relative;
+    width: 100%;
+    z-index: 20;
+  }
+
+  .main-nav--closed .main-nav__wrapper {
+    display: flex;
+    position: unset;
+  }
+
+  .main-nav__wrapper {
+    flex-direction: column;
+    background-color: unset;
+  }
+
+  .main-nav__wrapper--inner {
+    background-color: $background-grey;
+  }
+
+  .main-nav--opened .main-nav__wrapper {
+    display: flex;
+    position: unset;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: flex-start;
+    order: 1;
+    width: 52%;
+
+  }
+
+  .main-nav__user-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 48%;
+    align-self: end;
+  }
+
+  .main-nav__text {
+    display: block;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: end;
+    position: absolute;
+    bottom: 0;
+    order: 1;
+    width: 35%;
+    align-self: end;
+    padding-right: 50px;
+    margin-bottom: 44px;
+  }
+
+  // .main-nav--opened .main-nav__wrapper {
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   left: 0;
+  //   z-index: 20;
+  //   background-color: $white;
+  // }
+}
+
+@media (min-width: $desktop) {
+  .main-nav__stock-list {
+    list-style: none;
+    color: $black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .main-nav__list {
+    order: 0;
+  }
+
+  .main-nav__user-list {
+    position: absolute;
+  }
+
+  .main-nav__wrapper {
+    z-index: 100;
+    width: 1150px;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    position: unset;
+  }
+
+  .main-nav--inner {
+    background-color: $background-grey;
+  }
+}

@@ -1,0 +1,31 @@
+.header-logo__image {
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  top: 22px;
+}
+
+@media (min-width: $tablet) {
+  .header-logo__image {
+    width: 114px;
+    height: 46px;
+    left: 48px;
+    transform: none;
+    top: 21px;
+  }
+
+  // .header-logo__image {
+  //   width: 136px;
+  //   height: 65px;
+  // }
+}
+
+@media (min-width: $desktop) {
+  .header-logo__image {
+    width: 149px;
+    height: 72px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 9px;
+  }
+}

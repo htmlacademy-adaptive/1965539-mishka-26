@@ -1,0 +1,30 @@
+.inner-page-text {
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+@media (min-width: $tablet) {
+  .inner-page-text {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    margin-top: 55px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 14px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .inner-page-text {
+    width: 1048px;
+    display: block;
+    margin: 0 auto;
+    max-width: 702px;
+    padding-top: 111px;
+    padding-bottom: 12px;
+  }
+}

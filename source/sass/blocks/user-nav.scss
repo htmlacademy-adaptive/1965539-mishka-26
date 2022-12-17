@@ -10,7 +10,7 @@
   font-size: 17px;
   line-height: 24px;
   text-decoration: none;
-  border-top: 1px solid #ECECEC;
+  border-top: 1px solid $light-grey;
   font-weight: 700;
   padding-left: 76px;
   position: relative;
@@ -26,7 +26,7 @@
 }
 
 .user-nav__item:last-child {
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid $light-grey;
 }
 
 
@@ -41,11 +41,7 @@
   position: absolute;
   left: 31px;
   top: 31px;
-}
-
-.user-nav__link-image {
   fill: $black;
-  // opacity: 0.2;
 }
 
 .user-nav__link:hover .user-nav__link-image {
@@ -60,6 +56,9 @@
 @media (min-width: $tablet) {
   .user-nav {
     background-color: $white;
+    border-bottom: 1px solid $border-light-grey;
+    width: 100%;
+    min-height: 87px;
   }
 
   .user-nav__link {
@@ -89,12 +88,6 @@
     padding-left: 33px;
     padding-right: 31px;
     padding-top: 35px;
-  }
-
-  .user-nav {
-    border-bottom: 1px solid $border-light-grey;
-    width: 100%;
-    min-height: 87px;
   }
 
   .user-nav__link--cart {

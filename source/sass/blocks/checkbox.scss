@@ -38,11 +38,11 @@
   display: block;
 }
 
-.checkbox__label:hover:before {
+.checkbox__label:hover::before {
   border: 2px solid $blue;
 }
 
-.checkbox__label:active:before {
+.checkbox__label:active::before {
   border: 2px solid $grey-active3;
 }
 

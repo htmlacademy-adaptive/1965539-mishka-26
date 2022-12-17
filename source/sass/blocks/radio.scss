@@ -40,11 +40,11 @@
   display: block;
 }
 
-.radio__label:hover:before {
+.radio__label:hover::before {
   border: 2px solid $blue;
 }
 
-.radio__label:active:before {
+.radio__label:active::before {
   border: 2px solid $grey-active3;
 }
 

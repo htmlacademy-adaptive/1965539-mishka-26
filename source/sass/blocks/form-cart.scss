@@ -4,8 +4,6 @@
   font-size: 25px;
   line-height: 30px;
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 14px;
   width: 163px;
   display: flex;
   margin: 0 auto;
@@ -44,7 +42,6 @@
   margin-bottom: 31px;
   border: none;
   padding: 0;
-  margin-bottom: 31px;
 }
 
 .form-cart__input-wrapper {
@@ -78,7 +75,6 @@
 .form-cart__radio:checked+.form-cart__label {
   border: 2px solid $light-blue;
 }
-
 
 @media (min-width: $tablet) {
   .form-cart__title {

@@ -17,7 +17,7 @@
   font-size: 17px;
   line-height: 24px;
   text-decoration: none;
-  border-top: 1px solid #ECECEC;
+  border-top: 1px solid $light-grey;
   font-weight: 700;
   padding-left: 76px;
 
@@ -43,15 +43,15 @@
     padding-top: 20px;
     font-size: 15px;
     padding-left: 0;
-    margin-right: 37px;
+    padding-right: 37px;
   }
-
 }
 
 @media (min-width: $desktop) {
   .site-list {
     max-width: 50%;
-    margin-left: 11px;
+    margin-left: 0;
+    padding-left: 15px;
     z-index: 10;
     margin-right: auto;
     box-sizing: border-box;
@@ -59,7 +59,7 @@
   }
 
   .site-list__item {
-    width: 220px;
+    width: 219px;
 
     &:first-child {
       border-right: 1px solid $border-grey2;
@@ -69,15 +69,9 @@
   .site-list__link {
     font-size: 17px;
     padding-top: 33px;
-    padding-left: 39px;
-    margin-right: 24px //     &::before {
-    //       content: none;
-    //       position: absolute;
-    //       top: 0;
-    //       right: 500px;
-    //       width: calc(50vw - 575px);
-    //       height: 100%;
-    //       background-color: green;
+    padding-left: 35px;
+    padding-right: 24px;
+    padding-bottom: 30px;
   }
 
   .site-list::before {
@@ -88,7 +82,7 @@
     top: 0;
     height: 100%;
     width: 100vw;
-    background-color: #fff;
+    background-color: $white;
     z-index: -1;
     border-bottom: 1px solid $border-light-grey;
   }

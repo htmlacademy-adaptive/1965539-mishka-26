@@ -11,6 +11,10 @@
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="./fonts/opensans.woff2" as="font">
+  <link rel="preload" href="./fonts/opensans.woff" as="font">
+  <link rel="preload" href="./fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="./fonts/opensansbold.woff" as="font">
 </head>
 
 <body class="page__body">
@@ -65,8 +69,8 @@
             <a class="stock-nav__link" href="#">Распродажа</a>
           </li>
         </ul>
-
         <p class="main-nav__text">Бесплатная доставка по России</p>
+      </div>
     </nav>
   </header>
 
@@ -80,7 +84,7 @@
         <ul class="greeting__list">
           <li class="greeting__item greeting__item--decor">
             <a class="greeting__link" href="#">
-              <span class="greeting__text">Предметы интерьера</span>
+              <span class="greeting__text greeting__text--decor">Предметы интерьера</span>
               <svg aria-hidden="true" width="40" height="62" class="greeting__icon greeting__icon--interior">
                 <use href="./img/sprite.svg#interior"></use>
               </svg>
@@ -88,7 +92,7 @@
           </li>
           <li class="greeting__item greeting__item--toy">
             <a class="greeting__link" href="#">
-              <span class="greeting__text">Детские игрушки</span>
+              <span class="greeting__text greeting__text--toy">Детские игрушки</span>
               <svg aria-hidden="true" width="60" height="59.62" class="greeting__icon greeting__icon--toy">
                 <use href="./img/sprite.svg#toy"></use>
               </svg>
@@ -271,8 +275,12 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__logo">
-        <a class="page-footer__link footer-logo" href="index.html" aria-label="Мишка">
-          <img class="page-footer__svg" src="./img/logo-footer.svg" width="128" height="24" alt="Логотип Мишка">
+        <a class="page-footer__link footer-logo" href="index.html">
+          <!-- <img class="page-footer__svg" src="./img/logo-footer.svg" width="128" height="24" alt="Логотип Мишка"> -->
+
+          <svg class="page-footer__svg" width="102" height="34">
+            <use href="./img/sprite.svg#logo-footer" />
+          </svg>
         </a>
       </div>
       <div class="social">
@@ -318,7 +326,7 @@
     </div>
   </footer>
 
-  <div class="modal page__overlay">
+  <div class="modal page__overlay"> <!--для открытия модального окна добавить класс modal--show-->
     <div class="modal__wrapper">
       <form class="form-cart modal__form-cart" action="https://echo.htmlacademy.ru" method="POST">
         <h3 class="form-cart__title">Добавить в корзину</h3>

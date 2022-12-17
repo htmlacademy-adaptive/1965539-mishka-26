@@ -20,6 +20,12 @@
     color: $white;
   }
 
+  &:focus {
+    background-color: $border-grey;
+    color: $white;
+    outline: none;
+  }
+
   &:active {
     color: $grey-active;
     background-color: $border-grey;

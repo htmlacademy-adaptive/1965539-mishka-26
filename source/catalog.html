@@ -11,10 +11,14 @@
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="./fonts/opensans.woff2" as="font">
+  <link rel="preload" href="./fonts/opensans.woff" as="font">
+  <link rel="preload" href="./fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="./fonts/opensansbold.woff" as="font">
 </head>
 
 <body class="page__body">
-  <header class="main-header">
+  <header class="main-header main-header--iner">
     <div class="main-header__logo-wrap">
       <a class="main-header__logo header-logo" href="index.html">
         <picture>
@@ -65,8 +69,8 @@
             <a class="stock-nav__link" href="#">Распродажа</a>
           </li>
         </ul>
-
         <p class="main-nav__text">Бесплатная доставка по России</p>
+      </div>
     </nav>
   </header>
 
@@ -75,22 +79,6 @@
     <section class="catalog catalog-page__catalog">
       <h2 class="visually-hidden">Витрина</h2>
       <ul class="catalog-list">
-
-        <!--
- <source media="(min-width: 1400px)" type="image/webp"
-   srcset="./img/catalog-pro-rice-500-desktop-1x.webp 1x, ./img/catalog-pro-rice-500-desktop-2x.webp 2x">
- <source media="(min-width: 768px)" type="image/webp"
-   srcset="./img/catalog-pro-rice-500-tablet-1x.webp 1x, ./img/catalog-pro-rice-500-tablet-2x.webp 2x">
- <source media="(min-width: 10px)" type="image/webp"
-   srcset="./img/catalog-pro-rice-500-mobile-1x.webp 1x, ./img/catalog-pro-rice-500-mobile-2x.webp 2x">
- <source media="(min-width: 1400px)"
-   srcset="./img/catalog-pro-rice-500-desktop-1x.png 1x, ./img/catalog-pro-rice-500-desktop-2x.png 2x">
- <source media="(min-width: 768px)"
-   srcset="./img/catalog-pro-rice-500-tablet-1x.png 1x, ./img/catalog-pro-rice-500-tablet-2x.png 2x">
- <img class="card__image" src="./img/catalog-pro-rice-500-mobile-1x.png"
-   srcset="./img/catalog-pro-rice-500-mobile-2x.png 2x" alt="Cat Energy PRO 500 г">
-
- -->
         <li class="catalog-list__item card">
           <a href="#" class="card__image-link">
             <picture>
@@ -118,8 +106,8 @@
                   <use href="./img/sprite.svg#cart" />
                 </svg>
               </a>
+            </footer>
           </div>
-          </footer>
         </li>
         <li class="catalog-list__item card">
           <a href="#" class="card__image-link">
@@ -148,10 +136,9 @@
                   <use href="./img/sprite.svg#cart" />
                 </svg>
               </a>
+            </footer>
           </div>
-          </footer>
         </li>
-
         <li class="catalog-list__item card">
           <a href="#" class="card__image-link">
             <picture>
@@ -215,10 +202,13 @@
 
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper content-wrapper">
+    <div class="page-footer__wrapper">
       <div class="page-footer__logo">
-        <a class="page-footer__link footer-logo" href="index.html" aria-label="Мишка">
-          <img class="page-footer__svg" src="./img/logo-footer.svg" width="128" height="24" alt="Логотип Мишка">
+        <a class="page-footer__link footer-logo" href="index.html">
+
+          <svg class="page-footer__svg" width="102" height="34">
+            <use href="./img/sprite.svg#logo-footer" />
+          </svg>
         </a>
       </div>
       <div class="social">
@@ -263,6 +253,28 @@
       </div>
     </div>
   </footer>
+  <div class="modal page__overlay">  <!--для открытия модального окна добавить класс modal--show-->
+    <div class="modal__wrapper">
+      <form class="form-cart modal__form-cart" action="https://echo.htmlacademy.ru" method="POST">
+        <h3 class="form-cart__title">Добавить в корзину</h3>
+
+        <fieldset class="form-cart__fieldset">
+          <legend class="form-cart__legend">Выберите размер:</legend>
+
+          <div class="form-cart__input-wrapper">
+            <input class="form-cart__radio visually-hidden" type="radio" id="size-s" name="size" value="1" checked>
+            <label class="form-cart__label" for="size-s">S</label>
+            <input class="form-cart__radio visually-hidden" type="radio" id="size-m" name="size" value="2">
+            <label class="form-cart__label" for="size-m">M</label>
+            <input class="form-cart__radio visually-hidden" type="radio" id="size-l" name="size" value="3">
+            <label class="form-cart__label" for="size-l">L</label>
+          </div>
+        </fieldset>
+
+        <button class="form-cart__button button button--green" type="submit">Добавить</button>
+      </form>
+    </div>
+  </div>
   <script src="./js/script.js"></script>
 </body>
 

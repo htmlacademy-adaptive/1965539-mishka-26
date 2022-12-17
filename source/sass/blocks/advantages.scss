@@ -39,7 +39,7 @@
   height: 27px;
   position: absolute;
   top: 2px;
-  left: 0px;
+  left: 0;
   background: url("../../img/icon-style.svg") no-repeat 0 0;
 }
 
@@ -146,5 +146,7 @@
     column-gap: 25px;
     grid-template-columns: 325px 325px;
     padding-left: 125px;
+    row-gap: 27px;
+    margin-bottom: 62px;
   }
 }

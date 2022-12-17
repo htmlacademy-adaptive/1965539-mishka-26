@@ -34,8 +34,20 @@
   }
 }
 
-.checkbox__input:checked+.checkbox__label::after {
+.checkbox__input:checked + .checkbox__label::after {
   display: block;
+}
+
+.checkbox__label:hover::before {
+  border: 2px solid $blue;
+}
+
+.checkbox__input:focus + .checkbox__label::before {
+  border: 2px solid $blue;
+}
+
+.checkbox__label:active::before {
+  border: 2px solid $grey-active3;
 }
 
 @media (min-width: $tablet) {

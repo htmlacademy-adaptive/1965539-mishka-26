@@ -23,12 +23,17 @@
 @media (min-width: $tablet) {
   .catalog-list {
     margin: 50px;
-    margin-bottom: 67px;
+    margin-bottom: 51px;
+    margin-top: 67px;
   }
 
   .catalog-list__item {
     display: flex;
-    margin-top: 68px;
+    margin-bottom: 52px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 

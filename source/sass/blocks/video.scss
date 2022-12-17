@@ -39,6 +39,17 @@
   left: 50%;
   top: 50%;
   border: none;
+  transform: translate(-50%, -50%);
+
+  &:hover {
+    scale: 120%;
+    transform: translate(-50%, -50%);
+  }
+
+  &:active {
+    opacity: 0.6;
+    scale: 80%;
+  }
 }
 
 .video__content-wrapper {

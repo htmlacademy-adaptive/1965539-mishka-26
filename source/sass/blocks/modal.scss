@@ -8,8 +8,13 @@
   left: 0;
   box-sizing: border-box;
   min-width: 320px;
-  display: block;
   display: none;
+}
+
+.modal--show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal__wrapper {

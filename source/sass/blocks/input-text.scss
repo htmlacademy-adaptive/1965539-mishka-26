@@ -68,12 +68,13 @@
   top: 14px;
 }
 
-.input-text__input:focus {
-  outline: none;
-}
-
 .input-text__input:hover,
 .input-text__input:active {
+  border-bottom: 2px solid $blue;
+}
+
+.input-text__input:focus {
+  outline: none;
   border-bottom: 2px solid $blue;
 }
 

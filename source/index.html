@@ -11,6 +11,10 @@
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="./fonts/opensans.woff2" as="font">
+  <link rel="preload" href="./fonts/opensans.woff" as="font">
+  <link rel="preload" href="./fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="./fonts/opensansbold.woff" as="font">
 </head>
 
 <body class="page__body">
@@ -322,7 +326,7 @@
     </div>
   </footer>
 
-  <div class="modal page__overlay">
+  <div class="modal page__overlay"> <!--для открытия модального окна добавить класс modal--show-->
     <div class="modal__wrapper">
       <form class="form-cart modal__form-cart" action="https://echo.htmlacademy.ru" method="POST">
         <h3 class="form-cart__title">Добавить в корзину</h3>

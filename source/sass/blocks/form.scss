@@ -130,6 +130,11 @@
   border: 2px solid $blue;
 }
 
+.form__textarea:focus {
+  border: 2px solid $blue;
+  outline: none;
+}
+
 .form__textarea:active {
   border: 2px solid $blue;
 }

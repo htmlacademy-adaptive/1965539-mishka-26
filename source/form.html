@@ -14,7 +14,7 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
+  <header class="main-header main-header--iner">
     <div class="main-header__logo-wrap">
       <a class="main-header__logo header-logo" href="index.html">
         <picture>
@@ -66,6 +66,7 @@
           </li>
         </ul>
         <p class="main-nav__text">Бесплатная доставка по России</p>
+      </div>
     </nav>
   </header>
 
@@ -76,7 +77,7 @@
         заказа и мы свяжемся с вами, чтобы
         уточнить детали.</p>
     </section>
-    <section class="form form-page__form">
+    <div class="form form-page__form">
       <form class="form__wrapper" action="https://echo.htmlacademy.ru" method="post">
         <div class="form__block-wrapper">
           <fieldset class="form__group">
@@ -155,35 +156,27 @@
         </div>
         <div class="form__block-wrapper form__block-wrapper--gray">
           <fieldset class="form__group form__tel">
-            <!--
-            <li class="input-text"> -->
+            <label class="form__title form__title--legend special-title" for="tel">Тел</label>
 
-            <!-- <div class="special-title">
-              <h2 class="special-title__wrapper">
-                <span class="special-title__text">Контактные данные (владельца кота)</span>
-              </h2>
-            </div> -->
-            <Legend class="form__title special-title">Тел</Legend>
-            <!-- <label class="input-text__label line" for="username"><span class="input-text__label-text">Тел</span></label> -->
-
-            <p class="form__content-wrapper form__content-wrapper--input-text">
-              <input class="input-text__input input-text__input-tel" type="tel" name="phone"
+            <div class="form__content-wrapper form__content-wrapper--input-text">
+              <input class="input-text__input input-text__input-tel" type="tel" id="tel" name="phone"
                 placeholder="+7 ХХХ ХХХ ХХ ХХ*" pattern="+7 [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" required>
-            </p>
+            </div>
           </fieldset>
           <fieldset class="form__group form__email">
-            <Legend class="form__title special-title">E-mail</Legend>
-            <p class="form__content-wrapper form__content-wrapper--input-text">
-              <input class="input-text__input input-text__input-email" type="email" name="email"
+            <label class="form__title form__title--legend special-title" for="mail"><span
+                class="form__title-text">E-&nbsp;mail</span></label>
+            <div class="form__content-wrapper form__content-wrapper--input-text">
+              <input class="input-text__input input-text__input-email" type="email" id="mail" name="email"
                 placeholder="Ваш Email*" required>
-            </p>
+            </div>
           </fieldset>
         </div>
         <div class="form__block-wrapper">
           <fieldset class="form__group form__other">
-            <Legend class="form__title special-title">Доп</Legend>
+            <label class="form__title form__title--legend form__title-textarea special-title" for="textarea">Доп</label>
             <p class="form__content-wrapper form__content-wrapper--input-text">
-              <textarea class="form__textarea" name="wishes"
+              <textarea class="form__textarea" name="wishes" id="textarea"
                 placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </p>
           </fieldset>
@@ -193,13 +186,17 @@
           </div>
         </div>
       </form>
-    </section>
+    </div>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__wrapper content-wrapper">
+    <div class="page-footer__wrapper">
       <div class="page-footer__logo">
-        <a class="page-footer__link footer-logo" href="index.html" aria-label="Мишка">
-          <img class="page-footer__svg" src="./img/logo-footer.svg" width="128" height="24" alt="Логотип Мишка">
+        <a class="page-footer__link footer-logo" href="index.html">
+          <!-- <img class="page-footer__svg" src="./img/logo-footer.svg" width="128" height="24" alt="Логотип Мишка"> -->
+
+          <svg class="page-footer__svg" width="102" height="34">
+            <use href="./img/sprite.svg#logo-footer" />
+          </svg>
         </a>
       </div>
       <div class="social">

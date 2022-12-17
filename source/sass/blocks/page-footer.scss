@@ -7,6 +7,19 @@
   display: none;
 }
 
+.page-footer__svg {
+  fill: $black;
+}
+
+.page-footer__link .page-footer__svg:hover {
+  fill: $blue-mail;
+}
+
+.page-footer__link .page-footer__svg:active {
+  fill: $blue-mail;
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet) {
   .page-footer {
     padding: 30px 0;
@@ -22,11 +35,6 @@
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
-  }
-
-  .page-footer__svg {
-    width: 102px;
-    height: 34px;
   }
 
   .page-footer__link {

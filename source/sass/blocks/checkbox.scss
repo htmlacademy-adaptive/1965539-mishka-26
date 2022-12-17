@@ -38,6 +38,14 @@
   display: block;
 }
 
+.checkbox__label:hover:before {
+  border: 2px solid $blue;
+}
+
+.checkbox__label:active:before {
+  border: 2px solid $grey-active3;
+}
+
 @media (min-width: $tablet) {
   .checkbox__label {
     font-size: 19px;

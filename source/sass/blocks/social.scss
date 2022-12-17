@@ -23,6 +23,19 @@
 //   fill: $green;
 // }
 
+.social__svg {
+  fill: $black;
+}
+
+.social__link .social__svg:hover {
+  fill: $blue-mail;
+}
+
+.social__link .social__svg:active {
+  fill: $blue-mail;
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet) {
   .social {
     display: flex;

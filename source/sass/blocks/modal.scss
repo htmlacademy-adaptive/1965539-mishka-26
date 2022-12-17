@@ -6,14 +6,31 @@
   background: rgba(255, 255, 255, 0.8);
   top: 0;
   left: 0;
+  display: block;
+  box-sizing: border-box;
+  min-width: 320px;
   display: none;
 }
 
 .modal__wrapper {
-  width: 100%;
+  width: 320px;
   max-width: 566px;
-  padding: 37px;
+  padding: 28px 30px 46px;
   background: white;
   box-shadow: 0px 5px 10px rgba(0, 1, 1, 0.25);
   margin: auto auto;
+  box-sizing: border-box;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1150px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media (min-width: $tablet) {
+  .modal__wrapper {
+    width: 566px;
+    padding-left: 106px;
+    padding-right: 106px;
+  }
 }

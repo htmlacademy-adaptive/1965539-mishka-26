@@ -126,9 +126,11 @@
 
 @media (min-width: $desktop) {
   .contacts {
-    width: 1050px;
-    padding-left: 224px;
+    box-sizing: border-box;
     margin: 0 auto;
+    max-width: 1150px;
+    width: 1050px;
+    padding-left: 174px;
     position: relative;
     margin-top: 287px;
   }
@@ -145,7 +147,7 @@
   .contacts__map {
     position: absolute;
     top: -79px;
-    right: 173px;
+    right: -1px;
   }
 
   .contacts__button {

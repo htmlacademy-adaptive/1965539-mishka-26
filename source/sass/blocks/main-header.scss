@@ -32,7 +32,19 @@
   .main-header__logo-wrap {
     height: 87px;
     border-bottom: 1px solid $light-grey;
-    width: 0;
     z-index: 30;
+    // width: 149px;
+    // position: absolute;
+  }
+
+  // .main-header__logo {
+  //   width: 149px;
+  //   height: 87px;
+  // }
+}
+
+@media (min-width: $desktop) {
+  .main-header--iner {
+    background-color: $background-grey;
   }
 }

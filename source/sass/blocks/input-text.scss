@@ -68,6 +68,15 @@
   top: 14px;
 }
 
+.input-text__input:focus {
+  outline: none;
+}
+
+.input-text__input:hover,
+.input-text__input:active {
+  border-bottom: 2px solid $blue;
+}
+
 @media (min-width: $tablet) {
   .input-text {
     margin-bottom: 24px;

@@ -2,3 +2,9 @@
   margin-top: 18px;
   margin-bottom: 30px;
 }
+
+@media (min-width: $desktop) {
+  .form-page__title {
+    padding-top: 16px;
+  }
+}

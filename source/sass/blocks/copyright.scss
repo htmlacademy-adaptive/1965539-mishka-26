@@ -30,6 +30,19 @@
 //   fill: $green;
 // }
 
+.copyright__svg {
+  fill: $title-blue;
+}
+
+.copyright__link .copyright__svg:hover {
+  fill: $blue-mail;
+}
+
+.copyright__link .copyright__svg:active {
+  fill: $blue-mail;
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet) {
   .copyright {
     margin: 0;

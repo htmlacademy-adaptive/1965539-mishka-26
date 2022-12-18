@@ -17,15 +17,6 @@
   margin-bottom: 21px;
 }
 
-// .form-cart__label::before {
-//   width: 82px;
-//   height: 52px;
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   border: 2px solid $border-light-grey;
-// }
-
 .form-cart__button {
   font-weight: 700;
   font-size: 17px;
@@ -67,12 +58,16 @@
     border: 2px solid $grey-active2;
   }
 
+  &:focus {
+    border: 2px solid $grey-active2;
+  }
+
   &:active {
     border: 2px solid $blue;
   }
 }
 
-.form-cart__radio:checked+.form-cart__label {
+.form-cart__radio:checked + .form-cart__label {
   border: 2px solid $light-blue;
 }
 

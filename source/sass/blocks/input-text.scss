@@ -1,6 +1,4 @@
 .input-text {
-  // display: flex;
-  // flex-direction: column;
   margin-bottom: 21px;
 }
 
@@ -11,17 +9,15 @@
 }
 
 .input-text__input {
-  // padding: 16px 0 11px 14px;
   border: 2px solid $black;
-  // flex-grow: 1;
   border-width: 0 0 2px 0;
   padding-top: 17px;
   padding-bottom: 12px;
   font-weight: 400;
-  // font-size: 17px;
   line-height: 18px;
   width: 100%;
   box-sizing: border-box;
+  padding-right: 40px;
 }
 
 .input-text__input-tel,
@@ -29,16 +25,6 @@
   padding-bottom: 16px;
   padding-top: 21px;
 }
-
-// input::-webkit-input-placeholder {
-//   color: red;
-//   opacity: 0.3;
-// }
-
-// input:-moz-placeholder {
-//   color: red;
-//   opacity: 0.3;
-// }
 
 .input-text__input::placeholder {
   font-family: "Oswald", sans-serif;
@@ -71,11 +57,24 @@
 .input-text__input:hover,
 .input-text__input:active {
   border-bottom: 2px solid $blue;
+
+  & ~ svg {
+    fill: $blue;
+  }
 }
+
+// .input-text__input:hover form__input-image,
+// .input-text__input:active form__input-image{
+//   fill: $blue;
+// }
 
 .input-text__input:focus {
   outline: none;
   border-bottom: 2px solid $blue;
+
+  & ~ svg {
+    fill: $blue;
+  }
 }
 
 @media (min-width: $tablet) {
@@ -95,7 +94,7 @@
   }
 
   .input-text__input {
-    padding: 18px 18px 14px 18px;
+    padding: 18px 56px 14px 18px;
   }
 
   .input-text__input::placeholder {

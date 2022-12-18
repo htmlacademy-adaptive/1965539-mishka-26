@@ -15,6 +15,10 @@
   fill: $blue-mail;
 }
 
+.page-footer__link:focus .page-footer__svg {
+  fill: $blue-mail;
+}
+
 .page-footer__link .page-footer__svg:active {
   fill: $blue-mail;
   opacity: 0.3;

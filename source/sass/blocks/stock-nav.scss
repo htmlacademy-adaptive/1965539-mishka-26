@@ -20,7 +20,6 @@
 
   .stock-nav__item {
     text-align: left;
-    // margin-left: 50px;
     width: 219px;
   }
 
@@ -34,6 +33,10 @@
     padding: 21px 24px 30px 36px;
 
     &:hover {
+      opacity: 0.6;
+    }
+
+    &:focus {
       opacity: 0.6;
     }
 

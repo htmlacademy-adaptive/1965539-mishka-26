@@ -23,6 +23,7 @@
 
 .contacts__title {
   margin-bottom: 28px;
+  position: relative;
 }
 
 .contacts__mail-link {
@@ -33,6 +34,10 @@
   padding-bottom: 2px;
 
   &:hover {
+    color: $blue-mail;
+  }
+
+  &:focus {
     color: $blue-mail;
   }
 
@@ -106,6 +111,17 @@
 
   .contacts__title {
     margin-bottom: 49px;
+    padding-right: 70px;
+  }
+
+  .contacts__title::before {
+    content: "";
+    background-image: url("../img/flag.svg.svg");
+    position: absolute;
+    width: 47px;
+    height: 82px;
+    right: 3px;
+    top: -24px;
   }
 
   .contacts__item {
@@ -142,6 +158,13 @@
 
   .contacts__title {
     margin-bottom: 35px;
+    padding-right: 551px;
+    hyphens: auto;
+  }
+
+  .contacts__title::before {
+    left: -111px;
+    top: -18px;
   }
 
   .contacts__map {

@@ -29,8 +29,44 @@
   position: relative;
 }
 
-.greeting__link:hover .greeting__item {
+.greeting__item--decor .greeting__link:hover {
   background-color: $blue2;
+}
+
+.greeting__item--decor .greeting__link:focus {
+  background-color: $blue2;
+}
+
+.greeting__item--toy .greeting__link:hover {
+  background-color: $blue-mail;
+}
+
+.greeting__item--toy .greeting__link:focus {
+  background-color: $blue-mail;
+}
+
+.greeting__link:hover {
+  & svg {
+    fill: $green2;
+  }
+}
+
+.greeting__link:focus {
+  & svg {
+    fill: $green2;
+  }
+}
+
+.greeting__link:active {
+  & svg {
+    fill: $green3;
+  }
+}
+
+.greeting__item--toy .greeting__link:active {
+  & svg {
+    fill: $green4;
+  }
 }
 
 .greeting__icon {
@@ -39,6 +75,7 @@
   bottom: 50%;
   right: 0;
   transform: translateY(50%);
+  fill: $green;
 }
 
 .greeting__icon--interior {

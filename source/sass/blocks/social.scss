@@ -31,6 +31,10 @@
   fill: $blue-mail;
 }
 
+.social__link:focus .social__svg {
+  fill: $blue-mail;
+}
+
 .social__link .social__svg:active {
   fill: $blue-mail;
   opacity: 0.3;
